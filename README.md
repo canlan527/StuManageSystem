@@ -1,0 +1,2 @@
+# StuManageSystem
+a jQuery project
