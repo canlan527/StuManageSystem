@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+				<span>渡一教育</span>
+			</div>
+		</div>
+		<div class="leftMenu">
+			<dl id="menu">
+				<dt>学生管理</dt>
+				<dd class="active" data-id="stuList">学生列表</dd>
+				<dd data-id="addstudent">新增学生</dd>
+			</dl>
+		</div>
+		<div class="rightContent">
+			<!-- 学生列表 -->
+			<div class="stuList content">
+				<div class="searchBar">
+					<label for="searchWord">关键字搜索：</label>
+					<input type="text" id="searchWord">
+					<button class="searchSubmit" id="searchBtn">搜索</button>
+				</div>
+				<table border="0">
+					<thead>
+						<tr>
+							<th>学号</th>
+							<th>姓名</th>
+							<th>性别</th>
+							<th>邮箱</th>
+							<th>年龄</th>
+							<th>手机号</th>
+							<th>住址</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="mes">
+						<!-- <tr>
+							<td>0001</td>
+							<td>小包</td>
+							<td>男</td>
+							<td>121312@qq.com</td>
+							<td>12</td>
+							<td>13100004456</td>
+							<td>山西省</td>
+							<td>
+								<button class="btn2 edit">编辑</button>
+								<button class="btn2 del">删除</button>
+							</td>
+						</tr> -->
+					</tbody>
+				</table>
+				<ul id="turnPage">
+					<li>上一页</li>
+					<li class="curPage">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>下一页</li>
+				</ul>
+				<div class="model">
+					<div class="mask"></div>
+					<div class="modelContent">
+						<h3>编辑信息</h3>
+						<form class="editMesForm">
+							<div>
+								<label for="name">姓名</label>
+								<input type="text" name="name">
+							</div>
+							<div class="sex">
+								<label for="sex">性别</label>
+								<input type="radio" name="sex" value="0" checked><span>男</span>
+								<input type="radio" name="sex" value="1"><span>女</span>
+							</div>
+							<div>
+								<label for="sNo">学号</label>
+								<input type="text" name="sNo">
+							</div>
+							<div>
+								<label for="email">邮箱</label>
+								<input type="text" name="email">
+							</div>
+							<div>
+								<label for="birth">出生年</label>
+								<input type="text" name="birth">
+							</div>
+							<div>
+								<label for="phone">手机号</label>
+								<input type="text" name="phone">
+							</div>
+							<div>
+								<label for="address">住址</label>
+								<input type="text" name="address">
+							</div>
+							<div>
+								<label for=""></label>
+								<input type="submit" id="editSubmit" class="btn" value="提交">
+								<input type="reset" class="btn" value="重置" >
+							</div>
+						</form> 
+					</div>
+				</div>
+			</div>
+			<div class="addstudent content">
+				<form class="addMesForm">
+					<div>
+						<label for="name">姓名</label>
+						<input type="text" name="name">
+					</div>
+					<div class="sex">
+						<label for="sex">性别</label>
+						<input type="radio" name="sex" value="0" checked><span>男</span>
+						<input type="radio" name="sex" value="1"><span>女</span>
+					</div>
+					<div>
+						<label for="sNo">学号</label>
+						<input type="text" name="sNo">
+					</div>
+					<div>
+						<label for="email">邮箱</label>
+						<input type="text" name="email">
+					</div>
+					<div>
+						<label for="birth">出生年</label>
+						<input type="text" name="birth">
+					</div>
+					<div>
+						<label for="phone">手机号</label>
+						<input type="text" name="phone">
+					</div>
+					<div>
+						<label for="address">住址</label>
+						<input type="text" name="address">
+					</div>
+					<div>
+						<label for=""></label>
+						<input type="submit" id="addSubmit" class="btn" value="提交">
+						<input type="reset" class="btn" value="重置" >
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- <script src="js/jquery-1.11.1.min.js"></script> -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="plug/turnPage/index.js"></script>
+<script src="js/index.js"></script>
+</html>

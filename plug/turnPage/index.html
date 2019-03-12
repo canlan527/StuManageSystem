@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.wrapper{
+		float: right;
+		margin: 20px;
+	}
+	.wrapper li{
+		display: inline-block;
+		padding: 5px 10px;
+		border:1px solid #ddd;
+		color:#b3bcc5;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.wrapper li.curPage{
+		background-color: #428bca;
+	    border: 1px solid #428bca;
+	    color: #fff;
+	}
+</style>
+<body>
+	<ul class="wrapper">
+		
+	</ul>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="index.js"></script>
+	<script>
+		$('.wrapper').turnPage({
+			curPage: 6,
+			allPage: 10,
+			changePage: function(page){
+				console.log(page);
+			}
+
+		});
+	</script>
+</body>
+</html>
